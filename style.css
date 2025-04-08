@@ -1,324 +1,183 @@
-/* Global Styles */
-:root {
-  --primary-color: #0563bb;
-  --secondary-color: #3498db;
-  --dark-color: #333;
-  --light-color: #f4f4f4;
-  --text-color: #444;
-  --border-color: #ddd;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskruti Nerkar - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile">
+                    <img src="jpg.jpg" alt="Your Profile Picture" class="profile-image">
+                    <h1>Sanskruti Nerkar</h1>
+                    <p class="title">Aspiring Data Scientist & Full-Stack Developer</p>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:sanskruti.nerkar@gmail.com">sanskruti.nerkar@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+91 9769033302">+91 9769033302</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/sanskruti-nerkar-732822294/" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Sanskruti-Nerkar" target="_blank">GitHub</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nagpur, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Dedicated Computer Science student with a strong foundation in programming languages and software
+ development. Eager to apply theoretical knowledge in practical scenarios, with a keen interest in emerging
+ technologies such as blockchain and game development. Seeking opportunities to contribute to innovative
+ projects and further develop technical skills in various areas of computer science.</p>
+        </section>
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: #f9f9f9;
-}
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Symbiosis Institute of Technology, Nagpur</h3>
+                    <p class="timeline-period">2022 - 2026</p>
+                    <p class="degree">Computer Science</p>
+                    <p>CGPA: 7.01/10</p>
+                </div>
+            </div>
+        </section>
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Internship at Tata Projects Ltd. Umred, Nagpur</h3>
+                    <p class="company">Tata Projects</p>
+                    <p class="timeline-period">Jun 2024 - July 2024</p>
+                    <ul class="achievement">
+                        <li>During my 30 day on-site internship at Tata Projects, I worked on data preprocessing and database
+ management to streamline purchase order planning</li>
+                        <li>Using Excel automation, VBA scripting, and advanced data analytics, I optimized procurement workflows and enhanced decision-making.</li>
+                    </ul>
+                </div>
+            </div>
 
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Technical Support Intern</h3>
+                    <p class="company">Kara Foundation, Nagpur</p>
+                    <p class="timeline-period">July 2024 - Nov 2024</p>
+                    <ul class="achievements">
+                        <li>Conducted research on dark web marketplaces, compiling reports that aided local law enforcement in
+ 2 investigations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Blockchain-based Event Management System</h3>
+                <p class="project-tech">Technologies: HTML, CSS, JavaScript, etc.</p>
+                <p class="project-description">• Developed a secure event management system using blockchain for QR code generation, resulting in
+ a 30% increase in ticket authenticity.
+ • Implemented full-stack development with Python (Flask), JavaScript, and MongoDB, improving data
+ security by 40%.</p>
+            </div>
 
-h1, h2, h3 {
-  color: var(--dark-color);
-  margin-bottom: 15px;
-  font-weight: 600;
-}
+            <div class="project-item">
+                <h3>Research Project on Enhanced Diabetes Prediction Through Advanced Machine Learning
+ Techniques</h3>
+                <p class="project-tech">Technologies: React, Node.js, MongoDB, etc.</p>
+                <p class="project-description">• Enhanced Diabetes Prediction Through Advanced Machine Learning Techniques Developed a high
+accuracy diabetes prediction model using supervised learning algorithms like Random Forest and
+ SVM.
+ • Leveraged feature engineering and model optimization to enhance diagnostic accuracy. Published the
+ research on IEEE, showcasing advancements over traditional methods</p>
+            </div>
+        </section>
 
-h2 {
-  font-size: 28px;
-  position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 25px;
-}
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skills-list">
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <ul class="skills-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul class="skills-list">
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--primary-color);
-  bottom: 0;
-  left: 0;
-}
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certification-item">
+                <h3>Java Fundamentals</h3>
+                <p class="certification-issuer">Oracle</p>
+                <p class="timeline-period">April 2024</p>
+            </div>
+        </section>
+    </main>
 
-section {
-  padding: 40px 0;
-  border-bottom: 1px solid var(--border-color);
-}
+    <!-- Floating social media icons -->
+    <div class="floating-icons">
+        <a href="https://www.linkedin.com/in/sanskruti-nerkar-732822294/" target="_blank" class="floating-icon floating-animation">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Sanskruti-Nerkar" target="_blank" class="floating-icon floating-animation" style="animation-delay: 0.5s;">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:sanskruti.nerkar@gmail.com" class="floating-icon floating-animation" style="animation-delay: 1s;">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
 
-ul {
-  list-style-position: inside;
-  margin-bottom: 15px;
-}
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Sanskruti Nerkar</p>
+        </div>
+    </footer>
 
-/* Header Styles */
-header {
-  background: linear-gradient(45deg, #1a2980, #26d0ce);
-  color: white;
-  padding: 60px 0;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.profile-image {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.3);
-  margin-bottom: 20px;
-  object-fit: cover;
-}
-
-.profile h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.profile .title {
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.contact-info {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  width: 100%;
-  max-width: 600px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.contact-item i {
-  margin-right: 10px;
-  font-size: 18px;
-  min-width: 30px;
-  text-align: center;
-}
-
-.contact-item a {
-  color: white;
-  text-decoration: none;
-}
-
-.contact-item a:hover {
-  text-decoration: underline;
-}
-
-/* About Section */
-#about p {
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-/* Timeline Styles for Education & Experience */
-.timeline-item {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 40px;
-  border-left: 2px solid var(--primary-color);
-}
-
-.timeline-item:last-child {
-  margin-bottom: 0;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: white;
-  border: 2px solid var(--primary-color);
-  left: -9px;
-  top: 0;
-}
-
-.timeline-content h3 {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.timeline-period {
-  color: var(--primary-color);
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.company, .degree {
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.achievements, .achievement {
-  padding-left: 20px;
-}
-
-/* Projects Section */
-.project-item {
-  margin-bottom: 35px;
-  padding: 25px;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.project-item:hover {
-  transform: translateY(-5px);
-}
-
-.project-item h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: var(--primary-color);
-}
-
-.project-tech {
-  font-style: italic;
-  margin-bottom: 10px;
-  color: #666;
-}
-
-/* Skills Section */
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.skill-category h3 {
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.skills-list {
-  list-style: none;
-}
-
-.skills-list li {
-  margin-bottom: 10px;
-  padding: 10px 15px;
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-}
-
-.skills-list li::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 3px;
-  background-color: var(--primary-color);
-}
-
-/* Certifications Section */
-.certification-item {
-  margin-bottom: 25px;
-}
-
-.certification-item h3 {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.certification-issuer {
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-/* Footer */
-footer {
-  background-color: var(--dark-color);
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
-
-/* Responsive Styles */
-@media screen and (min-width: 768px) {
-  .header-content {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-  
-  .profile {
-    align-items: flex-start;
-    margin-bottom: 0;
-  }
-  
-  .contact-info {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-  }
-  
-  .project-item {
-    padding: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  h2 {
-    font-size: 24px;
-  }
-  
-  .profile h1 {
-    font-size: 32px;
-  }
-  
-  .profile-image {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .project-item {
-    padding: 20px;
-  }
-}
+    <script>
+        document.getElementById('current-year').innerText = new Date().getFullYear();
+    </script>
+</body>
+</html>
